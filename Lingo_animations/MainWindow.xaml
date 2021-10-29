@@ -1,0 +1,45 @@
+﻿<Window x:Class="Lingo_animations.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="1002" Width="2000" WindowStartupLocation="CenterScreen" WindowStyle="None" Background="#00000000" Foreground="Black" ResizeMode="NoResize" KeyDown="OnKeyDownHandler" WindowState="Maximized">
+    <Grid x:Name="Main" Margin="0,0,0,0" Background="Black">
+        <Grid x:Name="_10_score" HorizontalAlignment="Center" VerticalAlignment="Bottom" Width="1980" MaxWidth="1980" ClipToBounds="False" Height="458">
+            <Rectangle x:Name="R_score_A" HorizontalAlignment="Right" Height="120" StrokeThickness="10" VerticalAlignment="Center" Width="242" RadiusX="100" RadiusY="100" Margin="0,120,167,137" MinWidth="242" Stroke="Silver">
+                <Rectangle.Fill>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="DarkBlue" Offset="0.814"/>
+                        <GradientStop Color="Blue" Offset="0.473"/>
+                        <GradientStop Color="DarkBlue" Offset="0.116"/>
+                    </LinearGradientBrush>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Label x:Name="_10_score_A" Content="0" HorizontalAlignment="Right" VerticalAlignment="Center" Width="242" Height="120" FontSize="80" Foreground="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="0,120,167,137" MinWidth="242" MinHeight="120" RenderTransformOrigin="0.802,0.483"/>
+            <Rectangle Height="120" Stroke="Silver" StrokeThickness="10" VerticalAlignment="Center" RadiusX="100" RadiusY="100" MinWidth="242" MinHeight="120" HorizontalAlignment="Center" Margin="564,24,564,233">
+                <Rectangle.Fill>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FFAA0000" Offset="0.814"/>
+                        <GradientStop Color="OrangeRed" Offset="0.473"/>
+                        <GradientStop Color="#FFAA0000" Offset="0.116"/>
+                    </LinearGradientBrush>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Label Content="70" x:Name="L_score_10" VerticalAlignment="Center" FontSize="80" Foreground="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" MinWidth="242" MinHeight="120" RenderTransformOrigin="0.5,0.5" Height="120" HorizontalAlignment="Center" Margin="564,24,564,233"/>
+            <Rectangle x:Name="R_score_B" HorizontalAlignment="Left" Height="120" Stroke="Silver" StrokeThickness="10" VerticalAlignment="Center" Width="242" RadiusX="100" RadiusY="100" Margin="181,120,0,137">
+                <Rectangle.Fill>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="DarkBlue" Offset="0.814"/>
+                        <GradientStop Color="Blue" Offset="0.473"/>
+                        <GradientStop Color="DarkBlue" Offset="0.116"/>
+                    </LinearGradientBrush>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Label x:Name="_10_score_B" Content="0" HorizontalAlignment="Left" VerticalAlignment="Center" Width="242" Height="120" FontSize="80" Foreground="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="181,120,0,137" MinWidth="242" MinHeight="120"/>
+            <UniformGrid x:Name="Word_canvas_10_R" HorizontalAlignment="Center" VerticalAlignment="Top" Background="#FFF5EAEA" Columns="10" Height="100" Width="1000" ClipToBounds="True" Margin="484,338,496,0"/>
+            <UniformGrid x:Name="Word_canvas_10_C" HorizontalAlignment="Center" VerticalAlignment="Top" Background="White" Columns="10" Height="100" Width="1000" Margin="484,238,496,0"/>
+            <Rectangle x:Name="_10_mask"           HorizontalAlignment="Center" VerticalAlignment="Top" Fill="Black"        Visibility="Visible"  Height="100" Width="1000" Margin="484,238,496,0"/>
+        </Grid>
+    </Grid>
+</Window>
